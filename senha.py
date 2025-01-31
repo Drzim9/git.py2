@@ -6,7 +6,6 @@ def gerar_senha(tamanho=12):
     senha = ''.join(random.choice(caracteres) for _ in range(tamanho))
     return senha
 
-# Exemplo de uso
 tamanho = int(input("Digite o tamanho da senha que deseja: "))
 senha_gerada = gerar_senha(tamanho)
 print(f"Sua senha gerada é: {senha_gerada}")
